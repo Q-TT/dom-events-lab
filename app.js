@@ -6,19 +6,10 @@ const buttonOperator = document.querySelector(".button operator")
 
 
 
-
-
-// buttons.forEach((button) => {
-//     button.addEventListener('click', (event) => {
-//         if(display.innerText.length < 15) {
-//             display.innerText += event.target.innerText
-//         }
-//     });
-// });
+/*-------------------------------- Variables --------------------------------*/
 let firstIput = null
 let secondInput = null
 let operator = null
-
 let result = null
 
 calculator.addEventListener('click', (event) => {
@@ -77,7 +68,6 @@ calculator.addEventListener('click', (event) => {
 
 
 
-/*-------------------------------- Variables --------------------------------*/
 
 /*------------------------ Cached Element References ------------------------*/
 
