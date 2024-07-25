@@ -34,7 +34,7 @@ calculator.addEventListener('click', (event) => {
         console.log(operator)
     }
 
-    if (event.target.innerText === "=" && firstIput && secondInput && operator) {
+    if (event.target.innerText === "=" && (firstIput || firstIput === 0) && (secondInput || secondInput === 0) && operator) {
         if (operator === "/") {
             result = firstIput / secondInput
         }
@@ -47,6 +47,7 @@ calculator.addEventListener('click', (event) => {
         if (operator === "+") {
             result = firstIput + secondInput
         }
+
         firstIput = result
         if (result.toString().length < 15) {
             display.innerText = result
@@ -63,8 +64,6 @@ calculator.addEventListener('click', (event) => {
         operator = null
     }
 });
-
-
 
 
 
