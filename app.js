@@ -12,6 +12,13 @@ let secondInput = null
 let operator = null
 let result = null
 
+
+
+/*------------------------ Cached Element References ------------------------*/
+
+/*----------------------------- Event Listeners -----------------------------*/
+
+/*-------------------------------- Functions --------------------------------*/
 calculator.addEventListener('click', (event) => {
 
     if (event.target.className === "button number") {
@@ -68,8 +75,3 @@ calculator.addEventListener('click', (event) => {
 
 
 
-/*------------------------ Cached Element References ------------------------*/
-
-/*----------------------------- Event Listeners -----------------------------*/
-
-/*-------------------------------- Functions --------------------------------*/
